@@ -1,0 +1,21 @@
+{
+  "version": "0.0.1",
+  "application": [
+    {
+      "name": "idap",
+      "database": {
+        "url": "127.0.0.1",
+        "username": "sa",
+        "password": "irfanM23",
+        "port": 1433,
+        "databaseName": "yourDbName",
+        "encrypt": true,
+        "trustServerCertificate": true,
+        "driverClassName": "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+      },
+      "persistence": {
+        "ddl": "update"
+      }
+    }
+  ]
+}
