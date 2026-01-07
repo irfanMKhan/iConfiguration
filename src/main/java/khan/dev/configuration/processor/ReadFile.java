@@ -1,7 +1,7 @@
-package khan.secured.configuration.processor;
+package khan.dev.configuration.processor;
 
 
-import khan.secured.configuration.model.Configuration;
+import khan.dev.configuration.model.Configuration;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;

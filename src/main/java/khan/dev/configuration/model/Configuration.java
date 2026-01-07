@@ -1,4 +1,4 @@
-package khan.secured.configuration.model;
+package khan.dev.configuration.model;
 
 import lombok.Getter;
 import lombok.Setter;

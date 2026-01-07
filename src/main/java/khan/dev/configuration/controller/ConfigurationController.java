@@ -1,6 +1,6 @@
-package khan.secured.configuration.controller;
+package khan.dev.configuration.controller;
 
-import khan.secured.configuration.service.ConfigurationService;
+import khan.dev.configuration.service.ConfigurationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

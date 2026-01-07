@@ -1,7 +1,7 @@
-package khan.secured.configuration.service;
+package khan.dev.configuration.service;
 
-import khan.secured.configuration.model.Configuration;
-import khan.secured.configuration.processor.ReadFile;
+import khan.dev.configuration.model.Configuration;
+import khan.dev.configuration.processor.ReadFile;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
