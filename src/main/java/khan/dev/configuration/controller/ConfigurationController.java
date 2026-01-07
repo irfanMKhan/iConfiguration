@@ -18,13 +18,18 @@ public class ConfigurationController {
     private final ConfigurationService service;
 
     @GetMapping
-    public ResponseEntity<?> getReadFile() throws IOException {
+    public ResponseEntity<?> getAll() throws IOException {
         return ResponseEntity.ok(service.getConfiguration());
     }
 
     @GetMapping("/{name}")
-    public ResponseEntity<?> getReadFile(@PathVariable String name) throws IOException {
-        return ResponseEntity.ok(service.getConfiguration(name));
+    public ResponseEntity<?> getApplication(@PathVariable String name) throws IOException {
+        return ResponseEntity.ok(service.getApplicationConfiguration(name));
+    }
+
+    @GetMapping("/{name}/database")
+    public ResponseEntity<?> getApplicationDatabase(@PathVariable String name) throws IOException {
+        return ResponseEntity.ok(service.getApplicationDB_Configuration(name));
     }
 
 }

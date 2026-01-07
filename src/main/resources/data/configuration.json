@@ -4,14 +4,11 @@
     {
       "name": "idap",
       "database": {
-        "url": "127.0.0.1",
+        "url": "jdbc:sqlserver://127.0.0.1:1433;databaseName=MIU;encrypt=true;trustServerCertificate=true",
         "username": "sa",
         "password": "irfanM23",
-        "port": 1433,
-        "databaseName": "yourDbName",
-        "encrypt": true,
-        "trustServerCertificate": true,
-        "driverClassName": "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+        "driverClassName": "com.microsoft.sqlserver.jdbc.SQLServerDriver",
+        "type": "com.zaxxer.hikari.HikariDataSource"
       },
       "persistence": {
         "ddl": "update"

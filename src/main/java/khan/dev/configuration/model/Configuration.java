@@ -17,11 +17,8 @@ public class Configuration {
         private String url;
         private String username;
         private String password;
-        private String port;
-        private String databaseName;
-        private String encrypt;
-        private String trustServerCertificate;
         private String driverClassName;
+        private String type;
     }
 
     @Getter

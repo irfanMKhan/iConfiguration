@@ -19,7 +19,7 @@ public class ConfigurationService {
         return readFile.load();
     }
 
-    public Configuration.Application getConfiguration(String aName) throws IOException {
+    public Configuration.Application getApplicationConfiguration(String aName) throws IOException {
 
         Configuration configuration = getConfiguration();
         Optional<Configuration.Application> ca = configuration.getApplication().stream()
@@ -27,6 +27,16 @@ public class ConfigurationService {
                 .findFirst();
 
         return ca.orElse(null);
+    }
+
+    public Configuration.Database getApplicationDB_Configuration(String aName) throws IOException {
+
+        Configuration configuration = getConfiguration();
+        Optional<Configuration.Application> ca = configuration.getApplication().stream()
+                .filter(application -> aName.equals(application.getName()))
+                .findFirst();
+
+        return ca.map(Configuration.Application::getDatabase).orElse(null);
     }
 
 }

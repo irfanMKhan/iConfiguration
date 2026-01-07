@@ -1,3 +1,6 @@
+server:
+  port: 9000
+
 application:
   url:
     path: api/v1
